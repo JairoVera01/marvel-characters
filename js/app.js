@@ -17,7 +17,7 @@ const marvel ={
                 console.log(marvel.id__personaje)
                 const nombre__personaje = personaje.name;
                 contenidoHTML+=`
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a href="${urlPersonaje}" target="_blank" >
                         <img src="${personaje.thumbnail.path}.${personaje.thumbnail.extension}" alt="${personaje.name}" class="img-thumbnail rounded mx-auto d-block">
                     </a>
@@ -30,7 +30,7 @@ const marvel ={
                     <h4>Comics totales donde aparece el personaje ${personaje.comics.available}</h4>
                     <a href="${personaje.resourceURI+'?ts=1&apikey=9aa88f1d225dbb7224f2ec9de8bcfca4&hash=854c61c1457c6e6869764c104c20f845'}" target="_blank" id="ver_comics">${personaje.resourceURI+'?ts=1&apikey=9aa88f1d225dbb7224f2ec9de8bcfca4&hash=854c61c1457c6e6869764c104c20f845'}</a>
                 </div>
-                <hr>
+                
                 `;
                 
             }
